@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+install:
+  - wget https://cdn.alliedvision.com/fileadmin/content/software/software/Vimba/Vimba_v2.0_Linux.tgz
+  - tar -xf Vimba_v2.0_Linux.tgz
+  - cd Vimba_2_0/VimbaCPP/Examples/AsynchronousGrab/Console/Build/Make/
+  - make
+  
+script:
+  - echo "success"
